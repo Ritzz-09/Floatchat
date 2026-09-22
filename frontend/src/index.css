@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ocean-950: #030712;
+  --color-ocean-900: #060d1d;
+  --color-ocean-850: #0a1426;
+  --color-ocean-800: #0f1d35;
+  --color-ocean-700: #172c4e;
+  --color-ocean-600: #234475;
+  --color-ocean-500: #0284c7;
+  --color-ocean-400: #38bdf8;
+  --color-ocean-300: #7dd3fc;
+  --color-ocean-200: #bae6fd;
+  --color-ocean-100: #e0f2fe;
+
+  --color-cyan-glow: #00f2fe;
+  --color-cyan-neon: #06b6d4;
+  --color-cyan-accent: #22d3ee;
+
+  --shadow-glow-cyan: 0 0 20px -2px rgba(0, 242, 254, 0.35);
+  --shadow-glow-blue: 0 0 20px -2px rgba(14, 165, 233, 0.35);
+  --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+body {
+  background-color: #030712;
+  color: #f1f5f9;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  overflow-x: hidden;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #060d1d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #172c4e;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0284c7;
+}
+
+/* Glassmorphism utility */
+.glass-panel {
+  background: rgba(6, 13, 29, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(56, 189, 248, 0.16);
+}
+
+.glass-panel-subtle {
+  background: rgba(15, 29, 53, 0.55);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-highlight {
+  background: rgba(10, 24, 48, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 242, 254, 0.35);
+  box-shadow: 0 0 25px -5px rgba(0, 242, 254, 0.2);
+}
+
+/* Pulse animation for active float markers */
+@keyframes oceanPulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 242, 254, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 8px rgba(0, 242, 254, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 242, 254, 0);
+  }
+}
+
+.ocean-pulse {
+  animation: oceanPulse 2s infinite cubic-bezier(0.4, 0, 0.6, 1);
+}
