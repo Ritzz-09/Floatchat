@@ -178,7 +178,7 @@ Outcome*: Focuses camera on the Coromandel coast, filtering local floats. Clicki
 
 ---
 
-## 9. Scientific Integrity & Limitations
+## 8. Scientific Integrity & Limitations
 
 - **Statistical Forecasting vs GCMs**: FloatChat uses harmonic autoregressive linear-seasonal regression on historical ARGO observations. It is intended for exploratory trajectory analysis, not operational numerical weather prediction.
 - **Correlation vs Causation**: FloatChat explicitly avoids asserting causal claims from correlation metrics.
