@@ -174,20 +174,7 @@ Open your browser at: `http://localhost:5173`
 
 ---
 
-## 8. Demo Walkthrough Scenarios
-
-1. **Temperature Anomalies**:
-   - Query: `"Show temperature anomalies in the Bay of Bengal from 2020 to 2025 at 1000m depth."`
-   - *Outcome*: Globe smoothly flies to the Bay of Bengal, sets depth to 1000m, renders thermal anomaly field, displays 5,107 observations and $+0.23^\circ\text{C}$ average anomaly.
-2. **Water Column Comparison**:
-   - Query: `"Compare salinity and temperature"`
-   - *Outcome*: Activates correlation analysis, renders scatter plot, computes Pearson $r = -0.64$ ($p < 0.001$), explaining upper-ocean stratification.
-3. **Forecasting**:
-   - Query: `"Forecast temperature anomalies for the next 6 months"`
-   - *Outcome*: Transitions analytics area to forecast mode, projecting 6 months of anomalies with 95% confidence intervals clearly demarcated.
-4. **Float Search & Inspection**:
-   - Query: `"Show ARGO floats near Chennai"`
-   - *Outcome*: Focuses camera on the Coromandel coast, filtering local floats. Clicking a float displays its full vertical CTD curve.
+Outcome*: Focuses camera on the Coromandel coast, filtering local floats. Clicking a float displays its full vertical CTD curve.
 
 ---
 
